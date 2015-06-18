@@ -1,5 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 define(SITE_NAME, 'ee_trainning');
+
 $base_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
 $base_url .= "://".$_SERVER['HTTP_HOST'].'/'.SITE_NAME;
 $admin_url  = $base_url . '/admin.php';
@@ -15,6 +16,7 @@ $config['index_page'] = "index.php";
 | observed by ExpressionEngine, e.g. 'permitted_uri_chars'
 |
 */
+$config['site_url'] = $base_url ;
 
 $config['app_version'] = '293';
 $config['license_contact'] = '';
@@ -29,11 +31,12 @@ $config['cookie_prefix'] = SITE_NAME.'_';
 $config['cookie_httponly'] = 'y';
 
 $config['server_path'] = FCPATH;
+
 $config['site_index'] = '';
 $config['theme_folder_url'] = $config['site_url']."/themes/";
-$config['theme_folder_path'] = $config['server_path']."themes/";
+$config['theme_folder_path'] = $config['server_path']."themes";
 $config['save_tmpl_files'] = "y";
-$config['tmpl_file_basepath'] = $config['server_path']."templates/";
+$config['tmpl_file_basepath'] = $config['server_path']."templates";
 $config['avatar_url'] = $config['site_url']."/images/uploads/system/avatars/";
 $config['avatar_path'] = $config['server_path']."images/uploads/system/avatars/";
 $config['photo_url'] = $config['site_url']."/images/uploads/system/member_photos/";
