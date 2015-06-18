@@ -1,0 +1,15 @@
+Manual_Configuracion
+
+1.- Bajer el codigo y subirlo al servidor
+2.- Darle permisos 777 a
+	- archivo /system/expressionengine/config/config.php
+	- archivo /system/expressionengine/config/database.php
+	- carpeta /system/expressionengine/cache/
+
+	- carpeta /images/avatars
+	- carpeta /images/captchas
+	- carpeta /images/member_photos
+	- carpeta /images/pm_attachments
+	- carpeta /images/uploads
+
+3.- ejecutar http://aplication/admin.php para cargar el wizard para instalar
